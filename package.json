@@ -1,0 +1,32 @@
+{
+  "name": "confidential-voting",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run deploy/deploy.ts --network fhenixTestnet",
+    "test": "hardhat test"
+  },
+  "dependencies": {
+    "@reownkit/core": "^0.2.0",
+    "@walletconnect/web3wallet": "^1.9.0",
+    "@walletconnect/sign-client": "^2.10.6",
+    "@fhenixjs/sdk": "^0.1.0-beta.1",
+    "ethers": "^6.9.0",
+    "viem": "^1.19.11"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@types/node": "^20.8.2",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.17.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-node-polyfills": "^0.19.0"
+  }
+}

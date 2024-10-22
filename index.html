@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidential Voting System</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Confidential Voting System</h1>
+      <button id="connectWallet">Connect Wallet</button>
+      <span id="walletAddress"></span>
+    </header>
+    
+    <main>
+      <section id="votingSection" class="hidden">
+        <h2>Current Proposal</h2>
+        <div id="proposalDetails">
+          <h3 id="proposalTitle"></h3>
+          <p id="proposalDescription"></p>
+        </div>
+        
+        <div id="votingOptions">
+          <button class="vote-btn" data-vote="yes">Yes</button>
+          <button class="vote-btn" data-vote="no">No</button>
+        </div>
+        
+        <div id="results" class="hidden">
+          <h3>Current Results (Encrypted)</h3>
+          <div id="encryptedResults"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
